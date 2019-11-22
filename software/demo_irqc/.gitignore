@@ -1,0 +1,4 @@
+demo_irqc
+*.dump
+*.verilog
+*.o
