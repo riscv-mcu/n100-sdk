@@ -1,2 +1,4 @@
 hello_world
 *.dump
+*.verilog
+*.o
