@@ -174,25 +174,6 @@ int main(int argc, char **argv)
 
   //printf("\nIn main function, the mstatus is 0x%x\n", read_csr(mstatus));
 
-
-  printf ("%s","\nPlease enter any letter from keyboard to continue!\n");
-
-  #ifdef CFG_SIMULATION
-  //Bob: for simulation, we comment it off
-  char c = 0xff;
-  printf ("%s","I got an input, it is\n\r");
-  #else
-  char c;
-  //Check for user input
-  while(1){
-    if (_getc(&c) != 0){
-       printf ("%s","I got an input, it is\n\r");
-       break;
-    }
-  }
-  #endif
-  _putc(c);
-  printf ("\n\r");
   printf ("%s","\nThank you for supporting RISC-V, you will see the blink soon on the board!\n");
 
  
