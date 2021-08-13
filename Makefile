@@ -95,7 +95,7 @@ software: clean
 dasm: software 
 	$(RISCV_OBJDUMP) -S -D $(PROGRAM_ELF) >& $(PROGRAM_ELF).dump
 	$(RISCV_OBJCOPY) $(PROGRAM_ELF) -O verilog $(PROGRAM_ELF).verilog
-	sed -i 's/@800/@000/g' $(PROGRAM_ELF).verilog
+	sed -i 's/@0008/@0000/g' $(PROGRAM_ELF).verilog
 
 
 
